@@ -21,8 +21,7 @@ a {
 }
 
 header {
-    height: 15svh;
-    background-color: rgb(109, 219, 255);
+    height: 100px;
     display: flex;
     justify-content: center;
 }
@@ -39,17 +38,15 @@ header>.header-wrapper {
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
-    height: 85svh;
-    padding-top: 8rem;
+    height: 100svh;
 }
 
 .hero-wrapper {
     width: 75%;
-    margin: 0 auto;
-
+    margin: 5rem auto 0 auto;
 }
 
-.hero h1 {
+.hero-wrapper h1 {
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-size: 4rem;
