@@ -112,7 +112,7 @@ main {
     margin: 0 auto;
 }
 
-section {
+main section {
     min-height: calc(100svh - 50px);
 }
 
