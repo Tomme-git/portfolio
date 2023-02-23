@@ -1,6 +1,6 @@
 :root {
     --main-bg-color: #00486e;
-    --main-text-color: #299629;
+    --main-text-color: #31eb31;
 }
 
 * {
@@ -26,6 +26,10 @@ a {
     color: var(--main-text-color);
 }
 
+.text-hightlight {
+    color: var(--main-text-color);
+}
+
 .hero {
     background-image: url('../images/ocean-bg.jpg');
     background-size: cover;
@@ -40,7 +44,7 @@ a {
 }
 
 .hero-wrapper {
-    width: 75%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,9 +56,18 @@ a {
 }
 
 .hero-wrapper h1 {
-    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-weight: 300;
     font-size: clamp(3rem, 10vw, 6rem);
     margin-bottom: 3rem;
+}
+
+.hero-heading-first {
+    margin: 5rem;
+}
+
+.hero-heading-second {
+    margin: 5rem;
 }
 
 .hero-wrapper a {
@@ -95,14 +108,20 @@ nav {
 }
 
 main {
-    width: 75%;
-    margin: 5rem auto 0 auto;
+    width: 70%;
+    margin: 0 auto;
 }
 
-main h2 {
+section {
+    min-height: calc(100svh - 50px);
+}
+
+.section-heading {
     text-align: center;
-    font-size: clamp(3rem, 10vw, 5.5rem);
-    margin-bottom: 5rem;
+    font-size: clamp(4rem, 10vw, 5.5rem);
+    font-weight: 500;
+    padding-top: 9rem;
+    padding-bottom: 13rem;
 }
 
 .about-content {
@@ -116,20 +135,21 @@ main h2 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 60%;
+
 }
 
 .about-author>img {
-    height: 150px;
-    width: 150px;
+    height: 24rem;
+    width: 24rem;
     border: 2px solid var(--main-text-color);
-    border-radius: 90px;
+    border-radius: 360px;
     margin-bottom: 1rem;
+    align-self: center;
 }
 
 .about-author>p {
+    width: 500px;
     margin-top: 1.2rem;
-    max-width: 75ch;
     line-height: 2.5rem;
 }
 
@@ -154,30 +174,34 @@ main h2 {
     color: #131582;
 }
 
-
 .about-image {
-    width: 40%;
+    width: 50%;
+    max-width: 500px;
 }
 
 .about-image>img {
     width: 100%;
+    max-width: 500px;
 }
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .about-content {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+    }
+
+    .about-author,
+    .about-image {
+        width: 100%;
+        justify-content: center;
         align-items: center;
     }
 
-    .about-author {
-        width: 100%;
-    }
 
-    .about-image {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 780px) {
@@ -185,6 +209,9 @@ main h2 {
     .nav-wrapper,
     main {
         width: 100%;
+    }
+
+    main {
         padding: 0 2rem;
     }
 
@@ -192,11 +219,17 @@ main h2 {
         justify-content: center;
     }
 
-    .about-author img {
-        align-self: center;
+    .section-heading {
+        padding-bottom: 8rem;
     }
 
-    .author-links {
-        margin-bottom: 5rem;
+    .about-author p {
+        width: 100%;
+        max-width: 500px;
+        font-size: 1.6rem;
+    }
+
+    .about-author img {
+        align-self: center;
     }
 }
