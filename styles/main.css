@@ -321,7 +321,7 @@ main section {
     padding: 1rem 1.2rem;
     position: relative;
     cursor: pointer;
-    z-index: 20;
+    z-index: 10;
 }
 
 .project-info div::after {
