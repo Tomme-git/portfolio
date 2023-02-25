@@ -1,6 +1,7 @@
 :root {
     --main-bg-color: #00486e;
     --secondary-blue: #1a638a;
+    --tertiary-blue: #131582;
     --main-text-color: #31eb31;
     --secondary-green: #219c21;
 }
@@ -239,6 +240,108 @@ main section {
     height: 60px;
 }
 
+.projects>*+* {
+    margin-bottom: 9rem;
+}
+
+.projects>*:last-child {
+    margin-bottom: 0;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.project:nth-child(odd) {
+    flex-flow: row-reverse;
+}
+
+.project>a {
+    width: 70%;
+}
+
+.project-image {
+    display: flex;
+    align-items: center;
+    padding: 10rem 10rem 10rem 0;
+    background-color: var(--tertiary-blue);
+    margin-right: -7rem;
+}
+
+.project:nth-child(odd) .project-image {
+    padding: 10rem 0 10rem 10rem;
+    margin-right: 0;
+    margin-left: -7rem;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-info {
+    width: 30%;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(1.4rem, 2.8vw, 1.8rem);
+    padding: 2rem;
+}
+
+.project-info p {}
+
+.project:nth-child(odd) .project-info {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.project-info a {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3rem;
+}
+
+.project-info a:hover {
+    color: white;
+}
+
+.project-info div {
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 1rem 1.2rem;
+    position: relative;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.project-info div::after {
+    content: '';
+    position: absolute;
+    background-color: var(--secondary-green);
+    height: 3px;
+    width: 100%;
+    display: block;
+    bottom: 0;
+    transform-origin: bottom;
+    transition: all 0.25s;
+    z-index: -1;
+}
+
+.project-info div:hover::after {
+    height: 100%;
+    border-radius: 0.3rem;
+}
+
 
 .contact>h2 {
     padding-bottom: 4rem;
@@ -275,11 +378,11 @@ main section {
 }
 
 .form-wrapper input[type="submit"] {
-    padding-bottom: 0.2rem;
     background: none;
     width: 100px;
     position: relative;
     margin: 0 10px 0 auto;
+    padding-bottom: 0.2rem;
     text-transform: uppercase;
     font-size: 2.4rem;
     font-weight: 300;
@@ -302,7 +405,17 @@ main section {
         align-items: center;
     }
 
+    .project>a {
+        min-width: 450px;
+    }
 
+    .project-image {
+        padding: 4rem 4rem 4rem 0;
+    }
+
+    .project:nth-child(odd) .project-image {
+        padding: 4rem 0 4rem 4rem;
+    }
 }
 
 @media screen and (max-width: 780px) {
@@ -340,6 +453,46 @@ main section {
 
     .about-tools>div {
         gap: 5vw;
+    }
+
+    .project {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .project:nth-child(odd) {
+        flex-flow: column;
+    }
+
+    .project>a {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project-image {
+        padding: 1rem 1rem 1rem 0;
+        margin-right: 0;
+    }
+
+    .project:nth-child(odd) .project-image {
+        padding: 1rem 0 1rem 1rem;
+        margin-left: 0;
+    }
+
+    .project-info {
+        background-color: rgba(26, 99, 138, 0.31);
+        width: 100%;
+        min-width: 0;
+        margin-top: -5rem;
+    }
+
+    .project:nth-child(odd) .project-info {
+        text-align: initial;
+        align-items: initial;
+    }
+
+    .project-info a {
+        margin-top: 1rem;
     }
 
     .contact>p {
