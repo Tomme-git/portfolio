@@ -15,8 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
-
     <title>Tom Hansen | Webdev</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 
 <body>
@@ -29,14 +29,19 @@
         <div class="hero-wrapper">
             <img class="submarine" src="images/submarine.png" alt="">
             <img class="whale" src="images/whale.png" alt="">
-            <h1>
+            <h1 class="hero-text" id="typewriter">
+                <!--
                 Hi, my name is <span class="text-highlight">Tom</span>.
                 <br>
                 -
                 <br>
                 Multimedia design student.
+                -->
             </h1>
-            <a href="#about">Check out my work &darr;</a>
+            <h2 class="hero-text second-text">
+                Multimedia design student.
+            </h2>
+            <a class="hero-link" href="#about">Check out my work &darr;</a>
     </section>
     <nav>
         <div class="nav-wrapper">
@@ -55,8 +60,8 @@
                 <div class="about-author">
                     <img src="images/me.png" alt="image of the author">
                     <p>
-                        Presently a Multimedia Design student working towards a career in Front-end Development. I value
-                        learning and growing with the people and technologies around me.
+                        My name is Tom Hansen and I'm presently a Multimedia Design student working towards a career in
+                        Front-end Development. I value learning and growing with the people and technologies around me.
                         <br>
                         <br>
                         I'm a fairly quick learner and I love learning new things, especially when it comes to web
@@ -64,7 +69,7 @@
                         <br>
                         <br>
                         Previously completed an education as a Web Developer with specialty in Web Integration, which
-                        mainly consisted of back-end development, including communication with databases in PHP and
+                        mainly consisted of back-end development, including communication with databases, in PHP and
                         MySQL.
                     </p>
                     <!--
@@ -113,7 +118,7 @@
                 <div class="project-info">
                     <h3>Bilbixen</h3>
                     <p>
-                        Exam project where I had to replicate a design and create a simple CMS for a used-car
+                        Project involving having to to replicate a design and create a simple CMS for a used-car
                         marketplace, including user login and user authorization.
                         <br>
                         <br>
@@ -222,6 +227,7 @@
         </section>
     </main>
     <footer></footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

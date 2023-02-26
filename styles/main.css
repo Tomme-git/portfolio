@@ -120,18 +120,18 @@ a {
 .whale {
     opacity: 0.22;
     position: absolute;
-    transform: translate(0%, 290%);
+    transform: translate(0%, 250%);
     animation: whale 2s linear 0s infinite alternate;
     pointer-events: none;
 }
 
 @keyframes whale {
     0% {
-        transform: translate(0%, 290%);
+        transform: translate(0%, 250%);
     }
 
     100% {
-        transform: translate(0%, 280%);
+        transform: translate(0%, 240%);
     }
 }
 
@@ -147,31 +147,50 @@ a {
     text-align: center;
 }
 
-.hero-wrapper h1 {
+.hero-wrapper .hero-text {
     color: white;
     font-weight: 300;
     font-size: clamp(3rem, 10vw, 6rem);
     margin-bottom: 3rem;
 }
 
-.hero-heading-first {
-    margin: 5rem;
+.second-text {
+    opacity: 0;
+    animation: secondtextFadeIn 4s 8s forwards;
 }
 
-.hero-heading-second {
-    margin: 5rem;
+@keyframes secondtextFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-.hero-wrapper a {
+.hero-wrapper .hero-link {
     font-size: 2.4rem;
     font-size: clamp(1.5rem, 5vw, 2.4rem);
     border: 2px solid var(--main-text-color);
     border-radius: 2rem;
     padding: 10px 15px;
     transition: 0.25s;
+    opacity: 0;
+    animation: secondtextFadeIn 4s 8.5s forwards;
 }
 
-.hero-wrapper a:hover {
+@keyframes herolinkFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.hero-wrapper .hero-link:hover {
     background-color: var(--main-text-color);
     color: var(--tertiary-blue);
 }
