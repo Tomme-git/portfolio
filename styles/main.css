@@ -29,7 +29,50 @@ a {
     color: var(--main-text-color);
 }
 
-.text-hightlight {
+/*
+.splash {
+    position: fixed;
+    height: 100svh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131582;
+    z-index: 100;
+    animation: splash 3s linear 5s 1 forwards;
+    overflow-y: hidden;
+}
+
+@keyframes splash {
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+        pointer-events: none;
+        overflow-y: initial;
+    }
+}
+
+.splash .splashtest {
+    opacity: 0;
+    animation: splashtest 3s linear 2s 1 forwards;
+}
+
+@keyframes splashtest {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+*/
+.text-highlight {
     color: var(--main-text-color);
 }
 
@@ -44,6 +87,52 @@ a {
     align-items: center;
     position: relative;
     z-index: 21;
+    overflow: hidden;
+}
+
+.submarine {
+    opacity: 0.15;
+    position: absolute;
+    transform: translate(-300%, -100%);
+    animation: submarine 100s linear 0s infinite;
+    width: 400px;
+    pointer-events: none;
+}
+
+@keyframes submarine {
+    0% {
+        transform: translate(-300%, -100%);
+    }
+
+    50% {
+        transform: translate(300%, -70%);
+    }
+
+    51% {
+        transform: translate(300%, -70%) scaleX(-1);
+    }
+
+    100% {
+        transform: translate(-300%, -100%) scaleX(-1);
+    }
+}
+
+.whale {
+    opacity: 0.22;
+    position: absolute;
+    transform: translate(0%, 290%);
+    animation: whale 2s linear 0s infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes whale {
+    0% {
+        transform: translate(0%, 290%);
+    }
+
+    100% {
+        transform: translate(0%, 280%);
+    }
 }
 
 .hero-wrapper {
@@ -79,6 +168,12 @@ a {
     border: 2px solid var(--main-text-color);
     border-radius: 2rem;
     padding: 10px 15px;
+    transition: 0.25s;
+}
+
+.hero-wrapper a:hover {
+    background-color: var(--main-text-color);
+    color: var(--tertiary-blue);
 }
 
 nav {
