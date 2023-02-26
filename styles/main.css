@@ -4,6 +4,8 @@
     --tertiary-blue: #131582;
     --main-text-color: #31eb31;
     --secondary-green: #219c21;
+
+    --pink-highlight: #ffc3cd;
 }
 
 * {
@@ -29,49 +31,6 @@ a {
     color: var(--main-text-color);
 }
 
-/*
-.splash {
-    position: fixed;
-    height: 100svh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #131582;
-    z-index: 100;
-    animation: splash 3s linear 5s 1 forwards;
-    overflow-y: hidden;
-}
-
-@keyframes splash {
-
-    from {
-        opacity: 1;
-    }
-
-    to {
-        opacity: 0;
-        display: none;
-        pointer-events: none;
-        overflow-y: initial;
-    }
-}
-
-.splash .splashtest {
-    opacity: 0;
-    animation: splashtest 3s linear 2s 1 forwards;
-}
-
-@keyframes splashtest {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-*/
 .text-highlight {
     color: var(--main-text-color);
 }
@@ -157,7 +116,7 @@ a {
 
 .second-text {
     opacity: 0;
-    animation: secondtextFadeIn 4s 8s forwards;
+    animation: secondtextFadeIn 4s 6s forwards;
 }
 
 @keyframes secondtextFadeIn {
@@ -174,11 +133,11 @@ a {
     font-size: 2.4rem;
     font-size: clamp(1.5rem, 5vw, 2.4rem);
     border: 2px solid var(--main-text-color);
-    border-radius: 2rem;
+    border-radius: 0.3rem;
     padding: 10px 15px;
     transition: 0.25s;
     opacity: 0;
-    animation: herolinkFadeIn 4s 8.5s forwards;
+    animation: herolinkFadeIn 4s 6.5s forwards;
 
 }
 
@@ -226,13 +185,21 @@ nav {
     white-space: nowrap;
 }
 
+.nav-wrapper>div>a:hover,
+.nav-wrapper>div>a:active,
+.nav-wrapper>div>a:focus,
+.active {
+    color: var(--pink-highlight);
+    transition: 0.25s;
+}
+
 main {
     width: 70%;
     margin: 0 auto;
 }
 
 main section {
-    min-height: calc(100svh - 50px);
+    min-height: 100svh;
 }
 
 .section-heading {
@@ -379,6 +346,11 @@ main section {
 
 .project>a {
     width: 70%;
+    transition: 0.25s;
+}
+
+.project>a:hover {
+    transform: scale(0.95);
 }
 
 .project-image {
@@ -406,6 +378,7 @@ main section {
     flex-direction: column;
     font-size: clamp(1.4rem, 2.8vw, 1.8rem);
     padding: 2rem;
+    z-index: 20;
 }
 
 .project-info p {}
@@ -421,11 +394,13 @@ main section {
     margin-top: 3rem;
 }
 
-.project-info a:hover {
+.project-info a:hover,
+.form-wrapper button:hover {
     color: white;
 }
 
-.project-info div {
+.project-info div,
+.form-wrapper button {
     font-weight: 700;
     letter-spacing: 3px;
     line-height: 1;
@@ -441,7 +416,8 @@ main section {
     z-index: 10;
 }
 
-.project-info div::after {
+.project-info div::after,
+.form-wrapper button::after {
     content: '';
     position: absolute;
     background-color: var(--secondary-green);
@@ -454,11 +430,16 @@ main section {
     z-index: -1;
 }
 
-.project-info div:hover::after {
+.project-info div:hover::after,
+.form-wrapper button:hover::after {
     height: 100%;
     border-radius: 0.3rem;
 }
 
+.contact {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
 
 .contact>h2 {
     padding-bottom: 4rem;
@@ -494,17 +475,17 @@ main section {
     resize: none;
 }
 
-.form-wrapper input[type="submit"] {
+.form-wrapper input:focus,
+.form-wrapper textarea:focus {
+    outline: 1px solid var(--main-text-color);
+}
+
+.form-wrapper button {
     background: none;
-    width: 100px;
-    position: relative;
-    margin: 0 10px 0 auto;
-    padding-bottom: 0.2rem;
-    text-transform: uppercase;
-    font-size: 2.4rem;
-    font-weight: 300;
-    border-bottom: 2px solid var(--main-text-color);
-    cursor: pointer;
+    border: none;
+    color: var(--main-text-color);
+    font-size: clamp(1.4rem, 2.8vw, 1.8rem);
+    margin: 0 0 0 auto;
 }
 
 @media screen and (max-width: 1300px) {
