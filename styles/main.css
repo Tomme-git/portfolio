@@ -143,6 +143,7 @@ a {
 }
 
 .hero-wrapper h1,
+.hero-wrapper h2,
 .hero-wrapper a {
     text-align: center;
 }
@@ -177,7 +178,8 @@ a {
     padding: 10px 15px;
     transition: 0.25s;
     opacity: 0;
-    animation: secondtextFadeIn 4s 8.5s forwards;
+    animation: herolinkFadeIn 4s 8.5s forwards;
+
 }
 
 @keyframes herolinkFadeIn {
