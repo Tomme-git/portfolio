@@ -381,7 +381,9 @@ main section {
     z-index: 20;
 }
 
-.project-info p {}
+.project-info p {
+    line-height: 2.5rem;
+}
 
 .project:nth-child(odd) .project-info {
     text-align: right;
