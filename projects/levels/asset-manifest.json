@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/projects/levels/static/css/main.72a72f11.css",
-    "main.js": "/portfolio/projects/levels/static/js/main.636dd12f.js",
+    "main.js": "/portfolio/projects/levels/static/js/main.de811b28.js",
     "static/js/787.7f591488.chunk.js": "/portfolio/projects/levels/static/js/787.7f591488.chunk.js",
     "static/media/Work.webp": "/portfolio/projects/levels/static/media/Work.fcfca2999905ab335812.webp",
     "static/media/memphis-mansion.webp": "/portfolio/projects/levels/static/media/memphis-mansion.dbf6396f36fb533a851f.webp",
@@ -46,11 +46,11 @@
     "static/media/blueblob.svg": "/portfolio/projects/levels/static/media/blueblob.963096fdb83a6cc2b701.svg",
     "static/media/pinkblob.svg": "/portfolio/projects/levels/static/media/pinkblob.3ddcae64287152689dc7.svg",
     "main.72a72f11.css.map": "/portfolio/projects/levels/static/css/main.72a72f11.css.map",
-    "main.636dd12f.js.map": "/portfolio/projects/levels/static/js/main.636dd12f.js.map",
+    "main.de811b28.js.map": "/portfolio/projects/levels/static/js/main.de811b28.js.map",
     "787.7f591488.chunk.js.map": "/portfolio/projects/levels/static/js/787.7f591488.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72a72f11.css",
-    "static/js/main.636dd12f.js"
+    "static/js/main.de811b28.js"
   ]
 }
