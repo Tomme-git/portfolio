@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/projects/jpz-app",
+  "start_url": "/portfolio/projects/jpz-webapp",
   "display": "standalone",
   "theme_color": "#2f3c42",
   "background_color": "#ffffff"
