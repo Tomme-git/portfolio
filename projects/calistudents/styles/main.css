@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: "zero_hourregular";
+    src: url("../fonts/zero_hour-webfont.woff2") format("woff2"),
+        url("../fonts/zero_hour-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "zero_hourregular", sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+#hero {
+    background-image: url("../images/hero-image-bw.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+}
+
+#navflex {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    height: 130px;
+    align-items: center;
+}
+
+#navflex>nav>a {
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #464646;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+#herotext {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    bottom: 20vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#herotext>h1 {
+    font-size: 50pt;
+    margin-bottom: 20vh;
+}
+
+#herotext>h2 {
+    font-size: 35pt;
+}
+
+#ctanewsletter {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+#ctanewsletter:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: 0.4s;
+}
+
+main {
+    background-color: white;
+    min-height: 1000px;
+}
+
+main>section>h1 {
+    font-size: 30pt;
+    color: black;
+    text-align: center;
+    padding: 130px;
+}
+
+main>section>h2 {
+    font-size: 15pt;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 25vw;
+    margin: 100px auto 100px auto;
+}
+
+main>section>h2>a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 5px;
+    letter-spacing: 3px;
+
+    /** This display: flex declaration allows the a tag to span the entire parent tag (h2) **/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>section>h2>a:hover {
+    color: white;
+    background-color: black;
+    transition: 0.4s;
+}
+
+main>section>div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+main>section>div>a {
+    text-decoration: none;
+}
+
+.article {
+    height: 25vw;
+    min-height: 360px;
+    width: 25vw;
+    min-width: 360px;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 3px black;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.article:hover {
+    background-color: rgb(92, 57, 57);
+    transition: 0.3s;
+    box-shadow: 0 4px 10px 3px rgb(92, 57, 57);
+    margin-top: -4px;
+}
+
+.article>img {
+    opacity: 0.5;
+    position: absolute;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.articleteaser {
+    position: relative;
+    height: 100%;
+}
+
+.articleteaser>h2 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 35% 10px 10px 0;
+}
+
+.articleteaser>p {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+.authorteaser {
+    font-size: 8pt;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    background-color: #464646;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer>p,
+footer>a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15pt;
+}
+
+/**************************************** Articles ****************************************/
+
+.articleheader {
+    background-color: #464646;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    height: 130px;
+    align-items: center;
+    position: relative;
+}
+
+.articleheader>nav>a {
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.articlewrapper {
+    width: 70%;
+    margin: 0 auto 40px auto;
+}
+
+.articlewrapper h1,
+.articlewrapper h2,
+.articlewrapper h3,
+.articlewrapper p,
+.articlewrapper time,
+.articlewrapper a,
+.articlewrapper q,
+.articlewrapper b,
+.articlewrapper li,
+.articlewrapper i {
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    text-decoration-thickness: 2px;
+}
+
+.content {
+    display: flex;
+}
+
+.content>article {
+    width: 80%;
+}
+
+.details {
+    padding: 50px;
+}
+
+.details>p {
+    display: inline;
+}
+
+.content>article>p {
+    padding-left: 50px;
+}
+
+.content>aside {
+    width: 20%;
+}
+
+.content>aside>h2 {
+    margin-top: 60px;
+}
+
+.content>aside>a {
+    text-decoration: none;
+}
+
+.content>aside>a>div {
+    margin: 35px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.content>aside>a>div:hover {
+    background-color: #dbdbdb;
+    transition: 0.3s;
+}
+
+.content>aside>a>div>img {
+    border: 1px solid black;
+    height: auto;
+    width: 100%;
+}
+
+.content>aside>a>div>h3 {
+    margin: 15px 0;
+}
+
+.authorteaseraside {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 8pt;
+}
+
+.text {
+    padding: 0 50px 40px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text>h1 {
+    font-size: 30pt;
+    margin-bottom: 60px;
+}
+
+.text>h2 {
+    font-size: 25pt;
+    margin-bottom: 30px;
+}
+
+.text>p {
+    font-size: 18pt;
+    line-height: 25pt;
+    margin-bottom: 40px;
+    width: 80%;
+}
+
+.text>ul {
+    font-size: 12pt;
+    line-height: 17pt;
+    width: 50%;
+    margin-bottom: 40px;
+}
+
+.text>img {
+    border: 1px solid black;
+    margin-bottom: 40px;
+}
+
+.progressionshowcase {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.progressionshowcase>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.progressionshowcase>div>figure>img {
+    border: 1px solid black;
+}
+
+.progressionshowcase>div>figure>figcaption {
+    text-align: center;
+}
+
+
+/****************************** Mobile ******************************/
+
+@media only screen and (max-width: 1024px) {
+    #navflex {
+        width: 100%;
+    }
+
+
+    #navflex>nav {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropdown-content {
+        width: 30%;
+        right: 4%;
+        left: auto;
+    }
+
+    main>section>h1 {
+        padding: 50px 10px;
+    }
+
+    main>section>div {
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main>section>div>a {
+        margin-bottom: 50px;
+    }
+
+    main>section>div>a:last-child {
+        margin-bottom: 0;
+    }
+
+    .articleteaser h2 {
+        padding: 30% 10px 10px 0;
+    }
+
+    main>section>h2 {
+        width: 60vw;
+        margin: 10vh auto 10vh auto;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    #navflex {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .dropdown-content {
+        width: 100%;
+        left: 0;
+    }
+
+
+    #herotext {
+        margin: 0;
+        bottom: 30vh;
+    }
+
+    #herotext>h1 {
+        margin: 0 0 10vh 0;
+        font-size: 25pt;
+    }
+
+    #herotext>h2 {
+        margin: 0;
+        font-size: 20pt;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer a,
+    footer p {
+        border: none;
+    }
+
+
+}
