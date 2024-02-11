@@ -452,8 +452,17 @@ main section:not(.about) {
 
 .contact>p {
   margin: 0 auto;
-  padding-bottom: 9rem;
+  padding-bottom: 3rem;
   max-width: 500px;
+  text-align: center;
+}
+
+.contact>a {
+  display: block;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: underline;
 }
 
 .contact-content {
