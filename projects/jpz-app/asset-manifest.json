@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/portfolio/projects/jpz-app/static/css/main.771d3518.css",
+    "main.js": "/portfolio/projects/jpz-app/static/js/main.c915689e.js",
+    "static/js/787.369bf77b.chunk.js": "/portfolio/projects/jpz-app/static/js/787.369bf77b.chunk.js",
+    "static/media/logo.png": "/portfolio/projects/jpz-app/static/media/logo.61082533f5fab9594f47.png",
+    "service-worker.js": "/portfolio/projects/jpz-app/service-worker.js",
+    "static/media/noisy-yellow.jpg": "/portfolio/projects/jpz-app/static/media/noisy-yellow.4c7bc08a9214773a1fc7.jpg",
+    "static/media/default-pfp.png": "/portfolio/projects/jpz-app/static/media/default-pfp.92e284574eec9cb4429b.png",
+    "static/media/tickets.svg": "/portfolio/projects/jpz-app/static/media/tickets.b55e24c61946176c40fab6ad559ace20.svg",
+    "static/media/card-add.svg": "/portfolio/projects/jpz-app/static/media/card-add.06d9f5ffd16bb1bc5dd80377b4d4deba.svg",
+    "static/media/yearcard.svg": "/portfolio/projects/jpz-app/static/media/yearcard.0e8b2d1b30d7e7be0f950e87c203cea7.svg",
+    "static/media/wallet.svg": "/portfolio/projects/jpz-app/static/media/wallet.d787a3171142e51d1e9638582cd28eab.svg",
+    "static/media/checkmark.svg": "/portfolio/projects/jpz-app/static/media/checkmark.d1f894dad552e955a7a6c86aeeeb9919.svg",
+    "static/media/map.svg": "/portfolio/projects/jpz-app/static/media/map.2e44256e0a783c429f85507a94a4eafb.svg",
+    "index.html": "/portfolio/projects/jpz-app/index.html",
+    "static/media/search.svg": "/portfolio/projects/jpz-app/static/media/search.7db1e81c1e9daceda7b564b6bbc7ec36.svg",
+    "static/media/add.svg": "/portfolio/projects/jpz-app/static/media/add.77142db80b233752bbbb4c9a9e27d749.svg",
+    "main.771d3518.css.map": "/portfolio/projects/jpz-app/static/css/main.771d3518.css.map",
+    "main.c915689e.js.map": "/portfolio/projects/jpz-app/static/js/main.c915689e.js.map",
+    "787.369bf77b.chunk.js.map": "/portfolio/projects/jpz-app/static/js/787.369bf77b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.771d3518.css",
+    "static/js/main.c915689e.js"
+  ]
+}
