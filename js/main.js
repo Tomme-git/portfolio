@@ -40,7 +40,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }, options);
 
-  // Track all sections that have an `id` applied
   document.querySelectorAll('section').forEach((section) => {
     observer.observe(section);
   });
