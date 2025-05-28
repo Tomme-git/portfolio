@@ -275,7 +275,7 @@ main section:not(.about) {
   line-height: 2.5rem;
 }
 
-.about-author>div {
+.about-author div {
   font-weight: 700;
   letter-spacing: 3px;
   line-height: 1;
