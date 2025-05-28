@@ -275,7 +275,7 @@ main section:not(.about) {
   line-height: 2.5rem;
 }
 
-.about-author>a {
+.about-author>div {
   font-weight: 700;
   letter-spacing: 3px;
   line-height: 1;
@@ -290,7 +290,7 @@ main section:not(.about) {
   z-index: 10;
 }
 
-.about-author>a::after {
+.about-author div::after {
   content: '';
   position: absolute;
   background-color: var(--secondary-green);
