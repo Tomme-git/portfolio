@@ -275,40 +275,6 @@ main section:not(.about) {
   line-height: 2.5rem;
 }
 
-.about-author a {
-  width: fit-content;
-  height: fit-content;
-}
-
-.about-author div {
-  font-weight: 700;
-  letter-spacing: 3px;
-  line-height: 1;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  padding: 1rem 1.2rem;
-  position: relative;
-  cursor: pointer;
-  z-index: 10;
-}
-
-.about-author div::after {
-  content: '';
-  position: absolute;
-  background-color: var(--secondary-green);
-  height: 3px;
-  width: 100%;
-  display: block;
-  bottom: 0;
-  transform-origin: bottom;
-  transition: all 0.25s;
-  z-index: -1;
-}
-
 .author-links {
   display: flex;
   gap: 1rem;
@@ -432,18 +398,20 @@ main section:not(.about) {
   align-items: flex-end;
 }
 
-.project-info a {
+.project-info a, .about-author a {
   width: fit-content;
   height: fit-content;
   margin-top: 3rem;
 }
 
 .project-info a:hover,
+.about-author a:hover,
 .form-wrapper button:hover {
   color: white;
 }
 
 .project-info div,
+.about-author div,
 .form-wrapper button {
   font-weight: 700;
   letter-spacing: 3px;
@@ -461,6 +429,7 @@ main section:not(.about) {
 }
 
 .project-info div::after,
+.about-author div::after,
 .form-wrapper button::after {
   content: '';
   position: absolute;
@@ -475,6 +444,7 @@ main section:not(.about) {
 }
 
 .project-info div:hover::after,
+.about-author div:hover::after,
 .form-wrapper button:hover::after {
   height: 100%;
   border-radius: 0.3rem;
