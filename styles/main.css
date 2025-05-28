@@ -275,6 +275,11 @@ main section:not(.about) {
   line-height: 2.5rem;
 }
 
+.about-author a {
+  width: fit-content;
+  height: fit-content;
+}
+
 .about-author div {
   font-weight: 700;
   letter-spacing: 3px;
@@ -284,6 +289,7 @@ main section:not(.about) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: fit-content;
   padding: 1rem 1.2rem;
   position: relative;
   cursor: pointer;
