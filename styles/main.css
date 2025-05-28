@@ -269,6 +269,10 @@ main section:not(.about) {
   align-self: center;
 }
 
+.about-author>a {
+  margin-inline: auto;
+}
+
 .about-author>p {
   width: 500px;
   margin-top: 1.2rem;
